@@ -4,304 +4,424 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BREADLY/FIGMA</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 
 
 <body>
-    <header class="site-header container">
-        <div class="site-header__container site-header__container">
-            <a class="site-header__logo logo" href="#">
-                <svg width="72" height="41" viewBox="0 0 72 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M33.5177 13.8269C33.272 15.441 33.2966 16.1637 33.3457 17.6332C33.5423 22.9814 26.0474 25.246 23.1723 20.1387C22.4106 18.8137 21.9928 17.1273 21.7962 15.3205C21.9437 15.2964 22.0911 15.2964 22.2631 15.2723C22.4843 15.2482 22.73 15.2241 22.9512 15.2001C23.1232 16.8623 23.5164 18.4041 24.1798 19.5846C26.4897 23.656 32.3628 21.8491 32.2153 17.6814C32.1662 16.2601 32.1416 15.4169 32.3382 13.8751L33.5177 13.8269ZM21.7225 13.9955C21.5259 10.936 22.1894 6.76823 23.3443 3.9496L24.401 4.35914C23.2461 7.20187 22.73 10.8878 22.8529 13.9473L21.7225 13.9955ZM28.7505 12.526C28.7259 11.731 28.7259 11.0323 29.0208 10.2855C29.93 7.9246 33.1491 7.85232 33.8372 10.406C34.0092 11.0805 33.9846 11.8032 33.788 12.4778C33.3949 12.4778 32.9771 12.4778 32.5839 12.4778C32.8051 11.9237 32.8788 11.2732 32.7314 10.6951C32.3382 9.17732 30.6181 9.37005 30.102 10.6951C29.8809 11.2973 29.8809 11.8755 29.9054 12.5019C29.5123 12.5019 29.1437 12.5019 28.7505 12.526ZM26.6618 12.6223C26.4406 9.2496 27.4972 4.7446 29.1191 1.75732L30.1266 2.28732C28.6276 5.08187 27.5955 9.39414 27.8167 12.5501C27.4235 12.5741 27.0549 12.5982 26.6618 12.6223ZM24.1553 12.7669C24.0815 9.75551 24.9662 5.85278 25.9737 2.98596L27.0549 3.34732C26.0966 5.97323 25.2365 9.85187 25.2856 12.6705C24.917 12.7187 24.5484 12.7428 24.1553 12.7669Z"
-                        fill="#AF9778" />
-                    <path
-                        d="M15.5546 14.4051C16.6358 14.2364 17.7416 14.0678 18.8228 13.9232C19.9286 13.7787 21.0099 13.6582 22.0911 13.5378C23.1723 13.4414 24.2781 13.3451 25.3839 13.2728C26.5143 13.2005 27.6201 13.1523 28.6767 13.1042C29.7334 13.056 30.8392 13.056 31.9696 13.056C32.9771 13.056 33.96 13.056 34.943 13.0801L34.6235 13.6342L36.3928 17.296L34.8938 14.2123C33.9109 14.1882 32.9279 14.1642 31.9696 14.1882C30.9129 14.1882 29.8317 14.2123 28.7013 14.2605C27.5709 14.3087 26.4897 14.3569 25.4331 14.4292C24.3518 14.5014 23.2706 14.5978 22.1894 14.6942C21.1082 14.7905 20.0269 14.9351 18.9457 15.0555C17.8645 15.2001 16.7832 15.3687 15.7266 15.5373L15.5546 14.4051ZM50.3259 11.5864L50.5962 11.6346C51.1368 11.731 51.702 11.8273 52.2672 11.9478C52.8324 12.0442 53.373 12.1646 53.9382 12.2851C54.5034 12.4055 55.044 12.526 55.6092 12.6464L55.3634 13.7546C54.8228 13.6342 54.2576 13.5137 53.717 13.3932C53.1764 13.2728 52.6112 13.1764 52.0706 13.056C51.53 12.9596 50.9648 12.8392 50.4242 12.7428C49.9573 12.6705 49.4658 12.5742 48.9989 12.5019L50.3259 11.5864ZM46.6399 14.0678C47.2542 14.1642 47.844 14.2364 48.4337 14.3328C49.515 14.5014 50.5962 14.6942 51.6774 14.911C52.7587 15.1278 53.8399 15.3446 54.8965 15.5855L54.6508 16.6937C53.5942 16.4528 52.5129 16.236 51.4563 16.0192C50.3996 15.8023 49.3184 15.6337 48.2372 15.4651C47.6228 15.3687 47.0085 15.2723 46.3942 15.2001L45.9027 14.5737L46.4679 14.1882L46.6399 14.0678ZM48.1634 17.3442C48.6058 17.4164 49.0727 17.4887 49.515 17.561C50.031 17.6573 50.5471 17.7537 51.0877 17.8501C51.6037 17.9464 52.1198 18.0669 52.6604 18.1632C53.1764 18.2837 53.717 18.3801 54.2331 18.5005L53.9873 19.6087C53.4713 19.4882 52.9552 19.3678 52.4392 19.2714C51.9232 19.1751 51.4071 19.0546 50.8911 18.9582C50.375 18.8619 49.859 18.7655 49.343 18.6692L49.2447 18.6451L48.1634 17.3442Z"
-                        fill="#AF9778" />
-                    <path
-                        d="M34.9452 13.0799L36.739 10.1167L37.0831 10.1408C37.2305 10.1408 37.5254 10.1649 37.9431 10.189C38.2626 10.2131 38.5329 10.2131 38.8032 10.2372C39.4175 10.2853 39.9827 10.3094 40.4988 10.3576C41.0148 10.4058 41.58 10.454 42.1943 10.5022C42.8087 10.5503 43.3739 10.6226 43.8899 10.6708C44.4305 10.719 44.9957 10.7912 45.5855 10.8635C46.1261 10.9358 46.6913 11.0081 47.2565 11.0803C47.8954 11.1767 48.436 11.249 48.9274 11.3212C49.3943 11.3935 49.8612 11.4658 50.3281 11.5622L48.9766 12.4776L46.6421 14.0435L46.4947 14.1399L45.9295 14.5253L46.421 15.1517L48.1657 17.344L49.2223 18.669C48.7309 18.5726 48.2394 18.5003 47.7725 18.4281C47.1827 18.3317 46.6667 18.2594 46.1998 18.1872C45.7083 18.1149 45.1923 18.0426 44.6271 17.9703C44.1356 17.8981 43.6196 17.8499 43.0544 17.7776C42.4892 17.7053 41.9486 17.6572 41.4817 17.609C41.0148 17.5608 40.4742 17.5126 39.909 17.4644C39.3438 17.4162 38.8278 17.3922 38.3363 17.344C37.8694 17.3199 37.3288 17.2958 36.7636 17.2717L36.4196 17.2476L34.6257 13.634L34.9452 13.0799ZM47.3056 12.2367L47.0599 12.2126C46.5438 12.1403 45.9786 12.0681 45.3889 11.9958C44.8728 11.9235 44.3076 11.8753 43.7179 11.8031C43.1035 11.7308 42.5629 11.6826 42.0469 11.6344C41.5309 11.5862 40.9657 11.5381 40.3759 11.4899C39.7861 11.4417 39.221 11.3935 38.7049 11.3694C38.3855 11.3453 38.1152 11.3453 37.8694 11.3212C37.7711 11.3212 37.5991 11.2972 37.378 11.2972L36.2722 13.1522C37.0339 13.1762 37.8203 13.2244 38.6066 13.2726C39.7124 13.3449 40.7937 13.4172 41.8995 13.5376C42.9315 13.634 43.939 13.7544 44.9711 13.8749L47.3056 12.2367ZM44.7745 14.9349C43.767 14.8144 42.7595 14.694 41.7766 14.5976C40.6954 14.5012 39.6141 14.4049 38.5329 14.3326C37.7711 14.2844 36.9848 14.2362 36.223 14.2122L37.1568 16.1635C37.55 16.1876 37.9677 16.2117 38.41 16.2358C38.9752 16.2599 39.5158 16.3081 40.0073 16.3562C40.4988 16.4044 41.0148 16.4285 41.6046 16.5008C42.1943 16.549 42.7104 16.6212 43.2018 16.6694C43.6933 16.7176 44.2339 16.7899 44.7991 16.8622C45.2906 16.9344 45.8312 17.0067 46.3964 17.079L46.5438 17.1031L44.7745 14.9349Z"
-                        fill="white" />
-                    <path
-                        d="M48.2379 35.1952C49.1471 35.1952 49.9826 34.8339 50.5724 34.2557C51.1621 33.6775 51.5307 32.8584 51.5307 31.9671C51.5307 31.0757 51.1621 30.2566 50.5478 29.6784C49.958 29.1002 49.1225 28.7389 48.1887 28.7389H45.0188V35.2193L48.2379 35.1952ZM51.4078 35.0507C50.5969 35.8457 49.4911 36.3275 48.2625 36.3275H43.913V27.5825H48.2379C49.4911 27.5825 50.5969 28.0643 51.4078 28.8593C52.2188 29.6543 52.7348 30.7384 52.7348 31.943C52.7102 33.1716 52.2188 34.2557 51.4078 35.0507Z"
-                        fill="white" />
-                    <path d="M55.4383 27.5825V35.1952H62.7366V36.3275H54.2833V27.5825H55.4383Z" fill="white" />
-                    <path
-                        d="M65.0447 36.3276V33.4608L59.8843 27.5826L60.7689 26.8599L62.2679 28.5944L65.6099 32.4008L68.657 28.9317L70.4754 26.8599L71.3355 27.5826L66.1996 33.4608V36.3276H65.0447Z"
-                        fill="white" />
-                    <path
-                        d="M2.11377 28.7151V31.3892H7.0776L9.2892 28.7151H2.11377ZM2.11377 32.5215V35.1956H9.2892L7.0776 32.5215H2.11377ZM0.983398 35.7738V31.9915V27.6069H11.722L8.10968 31.9674L11.722 36.3278H0.983398V35.7738Z"
-                        fill="white" />
-                    <path
-                        d="M12.9515 36.3275V27.5825H22.1666L19.7092 31.943L22.1666 36.3034L21.1836 36.8816L18.7017 32.4971H14.1065V36.3034L12.9515 36.3275ZM14.1065 28.7148V31.3889H18.7017L20.2007 28.7148H14.1065Z"
-                        fill="white" />
-                    <path
-                        d="M31.8692 36.3275H23.7108V27.5825H31.7217V28.7148H24.8658V31.3889H29.7067V32.5212H24.8658V35.1952H31.8692V36.3275Z"
-                        fill="white" />
-                    <path
-                        d="M34.5233 31.3889H40.1752L39.5854 28.7148H34.5233V31.3889ZM40.4455 32.5212H34.5479V36.3275H33.3929V27.5825H40.5192L42.4605 36.3275L41.3301 36.5684L40.4455 32.5212Z"
-                        fill="white" />
-                </svg>
-            </a>
-            <div class="site-header__btn-text"></div>
-            <span class="site-header__btn-text-blok">About</span>
-            <span class="site-header__btn-text-blok">Vacancies</span>
-            <span class="site-header__btn-text-blok">Franchising</span>
-            <span class="site-header__btn-text-blok">Loyalty Programs</span>
-        </div>
-        <div class="site-header__custom--user">
 
-            <table class="site-header__icon">
-                <svg class="svg-style" width="24" height="25" viewBox="0 0 24 25" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <g id="cart">
-                        <path id="Vector"
-                            d="M2.88 4.22012C2.88 4.06099 2.94322 3.90837 3.05574 3.79585C3.16826 3.68333 3.32087 3.62012 3.48 3.62012H5.28C5.41387 3.62017 5.54387 3.66498 5.64933 3.74743C5.75479 3.82987 5.82965 3.94522 5.862 4.07512L6.348 6.02012H20.28C20.3681 6.02009 20.4552 6.03948 20.535 6.0769C20.6148 6.11433 20.6853 6.16887 20.7416 6.23665C20.798 6.30443 20.8387 6.38378 20.8609 6.46907C20.883 6.55436 20.8862 6.64348 20.87 6.73012L19.07 16.3301C19.0443 16.4678 18.9713 16.5922 18.8635 16.6817C18.7558 16.7712 18.6201 16.8202 18.48 16.8201H7.68C7.53993 16.8202 7.40425 16.7712 7.29649 16.6817C7.18874 16.5922 7.11569 16.4678 7.09 16.3301L5.293 6.75012L4.813 4.82112H3.48C3.32087 4.82112 3.16826 4.7579 3.05574 4.64538C2.94322 4.53286 2.88 4.38025 2.88 4.22112V4.22012ZM6.60201 7.22012L8.17801 15.6201H17.982L19.558 7.22012H6.60201ZM8.88 16.8201C8.56483 16.8201 8.25275 16.8822 7.96156 17.0028C7.67038 17.1234 7.40581 17.3002 7.18295 17.5231C6.96009 17.7459 6.78331 18.0105 6.66269 18.3017C6.54208 18.5929 6.48 18.9049 6.48 19.2201C6.48 19.5353 6.54208 19.8474 6.66269 20.1386C6.78331 20.4297 6.96009 20.6943 7.18295 20.9172C7.40581 21.14 7.67038 21.3168 7.96156 21.4374C8.25275 21.558 8.56483 21.6201 8.88 21.6201C9.51652 21.6201 10.127 21.3673 10.5771 20.9172C11.0271 20.4671 11.28 19.8566 11.28 19.2201C11.28 18.5836 11.0271 17.9731 10.5771 17.5231C10.127 17.073 9.51652 16.8201 8.88 16.8201ZM17.28 16.8201C16.9648 16.8201 16.6526 16.8822 16.3614 17.0028C16.0701 17.1235 15.8055 17.3003 15.5826 17.5232C15.3597 17.7461 15.1829 18.0107 15.0622 18.302C14.9416 18.5932 14.8795 18.9054 14.8795 19.2206C14.8795 19.5359 14.9416 19.848 15.0622 20.1392C15.1829 20.4305 15.3597 20.6951 15.5826 20.918C15.8055 21.1409 16.0701 21.3178 16.3614 21.4384C16.6526 21.559 16.9648 21.6211 17.28 21.6211C17.9165 21.6211 18.527 21.3683 18.9771 20.9182C19.4271 20.4681 19.68 19.8576 19.68 19.2211C19.68 18.5846 19.4271 17.9741 18.9771 17.5241C18.527 17.074 17.9165 16.8211 17.28 16.8211V16.8201ZM8.88 18.0201C9.03759 18.0201 9.19363 18.0512 9.33922 18.1115C9.48482 18.1718 9.6171 18.2602 9.72853 18.3716C9.83996 18.483 9.92835 18.6153 9.98866 18.7609C10.049 18.9065 10.08 19.0625 10.08 19.2201C10.08 19.3777 10.049 19.5337 9.98866 19.6793C9.92835 19.8249 9.83996 19.9572 9.72853 20.0686C9.6171 20.1801 9.48482 20.2685 9.33922 20.3288C9.19363 20.3891 9.03759 20.4201 8.88 20.4201C8.56175 20.4201 8.25652 20.2937 8.03148 20.0686C7.80643 19.8436 7.68 19.5384 7.68 19.2201C7.68 18.9019 7.80643 18.5966 8.03148 18.3716C8.25652 18.1465 8.56175 18.0201 8.88 18.0201ZM17.28 18.0201C17.4376 18.0201 17.5936 18.0512 17.7392 18.1115C17.8848 18.1718 18.0171 18.2602 18.1285 18.3716C18.24 18.483 18.3284 18.6153 18.3887 18.7609C18.449 18.9065 18.48 19.0625 18.48 19.2201C18.48 19.3777 18.449 19.5337 18.3887 19.6793C18.3284 19.8249 18.24 19.9572 18.1285 20.0686C18.0171 20.1801 17.8848 20.2685 17.7392 20.3288C17.5936 20.3891 17.4376 20.4201 17.28 20.4201C16.9617 20.4201 16.6565 20.2937 16.4315 20.0686C16.2064 19.8436 16.08 19.5384 16.08 19.2201C16.08 18.9019 16.2064 18.5966 16.4315 18.3716C16.6565 18.1465 16.9617 18.0201 17.28 18.0201Z"
-                            fill="white" />
-                    </g>
-                </svg>
-                <span>Basket</span>
-            </table>
-            <button class="site-header__lenguage">
+    <!-- HEADER -->
+    <header class="site-header">
 
-                <span>Russ</span>
-                <svg class="site-header__lenguage-svg" width="10" height="5" viewBox="0 0 10 5" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path id="Vector"
-                        d="M8.31689 0.416701L8.31689 0.416696C8.392 0.341583 8.49388 0.299386 8.6001 0.299386C8.70633 0.299386 8.8082 0.341584 8.88331 0.416696C8.95842 0.491808 9.00062 0.593682 9.00062 0.699907C9.00062 0.806131 8.95842 0.908005 8.88331 0.983117L5.28343 4.58299L5.28331 4.58312L5.2126 4.51241C5.18473 4.54037 5.15161 4.56257 5.11515 4.57771C5.07868 4.59285 5.03959 4.60064 5.0001 4.60064C4.96062 4.60064 4.92152 4.59285 4.88506 4.57771C4.84859 4.56257 4.81547 4.54037 4.7876 4.51241L8.31689 0.416701ZM8.31689 0.416701L5.0001 3.73397L8.31689 0.416701ZM1.02995 0.853301C1.05012 0.901896 1.07969 0.946031 1.11695 0.98318L1.68344 0.416819L1.6126 0.487406L1.68332 0.416701L1.68337 0.416753C1.64622 0.379493 1.60209 0.349928 1.5535 0.329751C1.50488 0.309563 1.45275 0.29917 1.4001 0.29917C1.34746 0.29917 1.29533 0.309563 1.24671 0.329751C1.19814 0.349918 1.15403 0.379463 1.11689 0.416696C1.07966 0.453832 1.05011 0.497945 1.02995 0.546513C1.00976 0.595133 0.999365 0.647261 0.999365 0.699907C0.999365 0.752552 1.00976 0.80468 1.02995 0.853301Z"
-                        fill="white" stroke="white" stroke-width="0.2" />
-                </svg>
-            </button>
 
-            <button class="site-header__user-icon">
-                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g id="user">
-                        <path id="Vector"
-                            d="M12 12.5C12.9548 12.5 13.8704 12.1208 14.5456 11.4456C15.2207 10.7705 15.6 9.85483 15.6 8.90005C15.6 7.94527 15.2207 7.02959 14.5456 6.35446C13.8704 5.67933 12.9548 5.30005 12 5.30005C11.0452 5.30005 10.1295 5.67933 9.4544 6.35446C8.77927 7.02959 8.39999 7.94527 8.39999 8.90005C8.39999 9.85483 8.77927 10.7705 9.4544 11.4456C10.1295 12.1208 11.0452 12.5 12 12.5ZM14.4 8.90005C14.4 9.21529 14.3379 9.52744 14.2173 9.81868C14.0966 10.1099 13.9198 10.3746 13.6969 10.5975C13.474 10.8204 13.2094 10.9972 12.9181 11.1178C12.6269 11.2385 12.3147 11.3005 11.9995 11.3005C11.6842 11.3005 11.3721 11.2385 11.0809 11.1178C10.7896 10.9972 10.525 10.8204 10.3021 10.5975C10.0792 10.3746 9.90235 10.1099 9.78171 9.81868C9.66108 9.52744 9.59899 9.21529 9.59899 8.90005C9.59899 8.26353 9.85184 7.65308 10.3019 7.20299C10.752 6.75291 11.3625 6.50005 11.999 6.50005C12.6355 6.50005 13.246 6.75291 13.696 7.20299C14.1461 7.65308 14.399 8.26353 14.399 8.90005H14.4ZM19.2 18.5C19.2 19.7 18 19.7 18 19.7H5.99999C5.99999 19.7 4.79999 19.7 4.79999 18.5C4.79999 17.3 5.99999 13.7 12 13.7C18 13.7 19.2 17.3 19.2 18.5ZM18 18.495C17.999 18.2 17.815 17.312 17.001 16.498C16.22 15.716 14.747 14.9 12 14.9C9.25199 14.9 7.77999 15.716 6.99799 16.498C6.18499 17.312 6.00199 18.2 5.99999 18.495H18Z"
-                            fill="white" />
-                    </g>
-                </svg>
-                <span>Kamoliddin</span>
-            </button>
+        <div class="container">
+            <div class="site-header__container flex">
+                <div class="site-header__wrp flex">
+                    <a class="site-header__logo logo" href="#"><img src="./img/meinicon.svg" alt="">
+                    </a>
+                    <div class="site-header__btn-text flex">
+                        <span class="site-header__btn-text-blok">About</span>
+                        <span class="site-header__btn-text-blok">Vacancies</span>
+                        <span class="site-header__btn-text-blok">Franchising</span>
+                        <span class="site-header__btn-text-blok">Loyalty Programs</span>
+                    </div>
+                </div>
+                <div class="site-header__custom--user flex">
+
+                    <table class="site-header__icon icon">
+                        <img src="./img/cart.svg" alt="">
+                        <span>Basket</span>
+                    </table>
+                    <button class="site-header__lenguage">
+
+                        <span>Russ</span>
+                        <img src="./img/doun.svg" alt="">
+                    </button>
+
+                    <button class="site-header__user-icon">
+                        <img src="./img/user.svg" alt="">
+
+                        <span>Kamoliddin</span>
+                    </button>
+
+                </div>
+            </div>
 
         </div>
     </header>
 
     <!-- MAIN -->
 
-    <div class="mein-container__body container">
-        <div class="mein-container__body-text-content">
-            <h1>Start your <span class="gold">successful
-                    a day </span>with french
-                breakfast</h1>
+    <div class="mein-container__body  flex">
 
-            <table>
+        <div class="container">
+            <div class="mein-container__body-section">
+                <div class="body-section">
+                    <div class="mein-container__body-text">
+                        <h1>Start your
+                            <span class="gold">successful <br> a day
 
-                <button class="button__scip">All breakfasts
-                    <svg width="6" height="9" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path id="Vector"
-                            d="M0.846353 8.45406C0.799739 8.40761 0.762755 8.35242 0.737519 8.29164C0.712283 8.23087 0.699292 8.16571 0.699292 8.0999C0.699292 8.03409 0.712283 7.96893 0.737519 7.90816C0.76273 7.84744 0.799666 7.79229 0.846215 7.74587L0.846118 7.74597L0.987529 7.8874L0.846353 7.74573L0.846353 8.45406ZM0.846353 8.45406L0.987529 8.3124L0.846353 8.45406ZM5.1537 4.85406C5.20032 4.80761 5.2373 4.75242 5.26254 4.69164C5.28777 4.63086 5.30076 4.56571 5.30076 4.4999C5.30076 4.43409 5.28777 4.36893 5.26254 4.30816C5.2373 4.24738 5.20032 4.19218 5.1537 4.14573L1.55395 8.45382L1.41253 8.3124L1.5542 8.45357L5.1537 4.85406ZM5.1537 4.85406L5.01256 4.71243L5.15395 4.85382L5.1537 4.85406ZM4.09267 4.4999L4.2341 4.64131L4.37553 4.4999L4.2341 4.35849L4.09267 4.4999Z"
-                            fill="#A78B6B" stroke="#A78B6B" stroke-width="0.4" />
-                    </svg>
-                </button>
-            </table>
-            <div class="site-slider">
-                <ul class="flex">
-                    <li>
-                        <img class="site-slider__img-1" src="./img/meet1.png" alt="">
-                    </li>
-                    <li>
-                        <img class="site-slider__img-2" src="./img/kruassan2.png" alt="">
-                    </li>
-                    <li>
-                        <img class="site-slider__img-1" src="./img/cocing3.png" alt="">
-                    </li>
+                            </span>with french <br> breakfast
+                        </h1>
+                        <button class="button-scip">All breakfastsi <img src="./img/scip.svg" alt="">
+                        </button>
+                    </div>
+                    <div class="site-slider">
+                        <ul class="flex">
+                            <li>
+                                <img class="site-slider__img-1" src="./img/meet1.png" alt="">
+                            </li>
+                            <li>
+                                <img class="site-slider__img-2" src="./img/kruassan2.png" alt="">
+                            </li>
+                            <li>
+                                <img class="site-slider__img-1" src="./img/cocing3.png" alt="">
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="mein-container__body-img">
+                    <img class="img1" src="./img/breakfast1.png" alt="">
+                    <img class="img2" src="./img/Frame 59761.png" alt="">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+
+
+<!-- COMPONENTS -->
+<div class="site-component__component">
+    <div class="container">
+        <div class="component__list">
+            <ul class="site-component__component-items flex">
+                <li class="site-component__component-items active">
+                    <a href="#">Breadly</a>
+                </li>
+                <li class="site-component__component-items">
+                    <a href="#">Beakery</a>
+                </li>
+                <li class="site-component__component-items">
+                    <a href="#">Dessert</a>
+                </li>
+                <li>
+                    <a href="#">Breakfast</a>
+                </li>
+                <li class="site-component__component-items">
+                    <a href="#">Salats</a>
+                </li>
+
+                <li class="site-component__component-items">
+                    <a href="#">Coups</a>
+                </li>
+
+                <li class="site-component__component-items">
+                    <a href="#">Sendviches</a>
+                </li>
+                <li class="site-component__component-items">
+                    <a href="#">Second meals</a>
+                </li>
+                <li class="site-component__component-items">
+                    <a href="#">Garnir</a>
+                </li>
+                <li class="site-component__component-items">
+                    <a class="site-component__component-btn">More
+                        <img src="./img/doun.svg" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- MENYU CARD -->
+
+<div class="site-section__menyu-card">
+    <div class="container">
+        <div class="site-section__menyu-card-list ">
+            <h2>Beakery</h2>
+
+            <div class="site-section__menyu-card-items">
+                <div class="site-section__menyu-img">
+                    <img src="./img/sezar.png" alt="">
+                </div>
+                <ul>
+                    <li class="texst-bold">Breakfast Tuna</li>
+                    <li class="texst-summ">135 000 sum</li>
+                    <li class="texst-ingredients">
+                        Tuna, avocado, hummus, sun dried tomatoes, poached eggs, cream
+                        cheese...</li>
                 </ul>
+                <button class="site-section__menyu-btn" type="button">Add to Basket</button>
+            </div>
+            <div class="site-section__menyu-card-items">
+
+                <div class="site-section__menyu-img">
+                    <img src="./img/sezar.png" alt="">
+                </div>
+                <ul>
+                    <li class="texst-bold">Breakfast Tuna</li>
+                    <li class="texst-summ">135 000 sum</li>
+                    <li class="texst-ingredients">Tuna, avocado, hummus, sun dried tomatoes, poached eggs, cream
+                        cheese...</li>
+                </ul>
+                <button class="site-section__menyu-btn" type="button">Add to Basket</button>
+            </div>
+            <div class="site-section__menyu-card-items">
+
+                <div class="site-section__menyu-img">
+                    <img src="./img/sezar.png" alt="">
+                </div>
+                <ul>
+                    <li class="texst-bold">Breakfast Tuna</li>
+                    <li class="texst-summ">135 000 sum</li>
+                    <li class="texst-ingredients">Tuna, avocado, hummus, sun dried tomatoes, poached eggs, cream
+                        cheese...</li>
+                </ul>
+                <button class="site-section__menyu-btn" type="button">Add to Basket</button>
+            </div>
+            <div class="site-section__menyu-card-items">
+
+                <div class="site-section__menyu-img">
+                    <img src="./img/sezar.png" alt="">
+                </div>
+                <ul>
+                    <li class="texst-bold">Breakfast Tuna</li>
+                    <li class="texst-summ">135 000 sum</li>
+                    <li class="texst-ingredients">Tuna, avocado, hummus, sun dried tomatoes, poached eggs, cream
+                        cheese...</li>
+                </ul>
+                <button class="site-section__menyu-btn" type="button">Add to Basket</button>
+            </div>
+            <div class="site-section__menyu-card-items">
+
+                <div class="site-section__menyu-img">
+                    <img src="./img/sezar.png" alt="">
+                </div>
+                <ul>
+                    <li class="texst-bold">Breakfast Tuna</li>
+                    <li class="texst-summ">135 000 sum</li>
+                    <li class="texst-ingredients">Tuna, avocado, hummus, sun dried tomatoes, poached eggs, cream
+                        cheese...</li>
+                </ul>
+                <button class="site-section__menyu-btn" type="button">Add to Basket</button>
+            </div>
+            <div class="site-section__menyu-card-items">
+
+                <div class="site-section__menyu-img">
+                    <img src="./img/sezar.png" alt="">
+                </div>
+                <ul>
+                    <li class="texst-bold">Breakfast Tuna</li>
+                    <li class="texst-summ">135 000 sum</li>
+                    <li class="texst-ingredients">Tuna, avocado, hummus, sun dried tomatoes, poached eggs, cream
+                        cheese...</li>
+                </ul>
+                <button class="site-section__menyu-btn" type="button">Add to Basket</button>
+            </div>
+            <div class="site-section__menyu-card-items">
+
+                <div class="site-section__menyu-img">
+                    <img src="./img/sezar.png" alt="">
+                </div>
+                <ul>
+                    <li class="texst-bold">Breakfast Tuna</li>
+                    <li class="texst-summ">135 000 sum</li>
+                    <li class="texst-ingredients">Tuna, avocado, hummus, sun dried tomatoes, poached eggs, cream
+                        cheese...</li>
+                </ul>
+                <button class="site-section__menyu-btn" type="button">Add to Basket</button>
+            </div>
+            <div class="site-section__menyu-card-items">
+
+                <div class="site-section__menyu-img">
+                    <img src="./img/sezar.png" alt="">
+                </div>
+                <ul>
+                    <li class="texst-bold">Breakfast Tuna</li>
+                    <li class="texst-summ">135 000 sum</li>
+                    <li class="texst-ingredients">Tuna, avocado, hummus, sun dried tomatoes, poached eggs, cream
+                        cheese...</li>
+                </ul>
+                <button class="site-section__menyu-btn" type="button">Add to Basket</button>
+            </div>
+
+
+        </div>
+
+    </div>
+</div>
+
+
+
+
+<div class="site-section__menyu-card ">
+
+
+    <div class="container">
+        <div class="site-section__menyu-card-list">
+            <h2>Breadly</h2>
+            <div class="site-section__menyu-card-items">
+
+                <div class="site-section__menyu-img">
+                    <img src="./img/cheasee.png" alt="">
+                </div>
+                <ul>
+                    <li class="texst-bold">Breakfast Tuna</li>
+                    <li class="texst-summ">135 000 sum</li>
+                    <li class="texst-ingredients">Tuna, avocado, hummus, sun dried tomatoes, poached eggs, cream
+                        cheese...</li>
+                </ul>
+                <button class="site-section__menyu-btn" type="button">Add to Basket</button>
+            </div>
+            <div class="site-section__menyu-card-items">
+
+                <div class="site-section__menyu-img">
+                    <img src="./img/cheasee.png" alt="">
+                </div>
+                <ul>
+                    <li class="texst-bold">Breakfast Tuna</li>
+                    <li class="texst-summ">135 000 sum</li>
+                    <li class="texst-ingredients">Tuna, avocado, hummus, sun dried tomatoes, poached eggs, cream
+                        cheese...</li>
+                </ul>
+                <button class="site-section__menyu-btn" type="button">Add to Basket</button>
+            </div>
+            <div class="site-section__menyu-card-items">
+
+                <div class="site-section__menyu-img">
+                    <img src="./img/cheasee.png" alt="">
+                </div>
+                <ul>
+                    <li class="texst-bold">Breakfast Tuna</li>
+                    <li class="texst-summ">135 000 sum</li>
+                    <li class="texst-ingredients">Tuna, avocado, hummus, sun dried tomatoes, poached eggs, cream
+                        cheese...</li>
+                </ul>
+                <button class="site-section__menyu-btn" type="button">Add to Basket</button>
+            </div>
+            <div class="site-section__menyu-card-items">
+
+                <div class="site-section__menyu-img">
+                    <img src="./img/cheasee.png" alt="">
+                </div>
+                <ul>
+                    <li class="texst-bold">Breakfast Tuna</li>
+                    <li class="texst-summ">135 000 sum</li>
+                    <li class="texst-ingredients">Tuna, avocado, hummus, sun dried tomatoes, poached eggs, cream
+                        cheese...</li>
+                </ul>
+                <button class="site-section__menyu-btn" type="button">Add to Basket</button>
+            </div>
+            <div class="site-section__menyu-card-items">
+
+                <div class="site-section__menyu-img">
+                    <img src="./img/cheasee.png" alt="">
+                </div>
+                <ul>
+                    <li class="texst-bold">Breakfast Tuna</li>
+                    <li class="texst-summ">135 000 sum</li>
+                    <li class="texst-ingredients">Tuna, avocado, hummus, sun dried tomatoes, poached eggs, cream
+                        cheese...</li>
+                </ul>
+                <button class="site-section__menyu-btn" type="button">Add to Basket</button>
+            </div>
+            <div class="site-section__menyu-card-items">
+
+                <div class="site-section__menyu-img">
+                    <img src="./img/cheasee.png" alt="">
+                </div>
+                <ul>
+                    <li class="texst-bold">Breakfast Tuna</li>
+                    <li class="texst-summ">135 000 sum</li>
+                    <li class="texst-ingredients">Tuna, avocado, hummus, sun dried tomatoes, poached eggs, cream
+                        cheese...</li>
+                </ul>
+                <button class="site-section__menyu-btn" type="button">Add to Basket</button>
+            </div>
+            <div class="site-section__menyu-card-items">
+
+                <div class="site-section__menyu-img">
+                    <img src="./img/cheasee.png" alt="">
+                </div>
+                <ul>
+                    <li class="texst-bold">Breakfast Tuna</li>
+                    <li class="texst-summ">135 000 sum</li>
+                    <li class="texst-ingredients">Tuna, avocado, hummus, sun dried tomatoes, poached eggs, cream
+                        cheese...</li>
+                </ul>
+                <button class="site-section__menyu-btn" type="button">Add to Basket</button>
+            </div>
+            <div class="site-section__menyu-card-items">
+
+                <div class="site-section__menyu-img">
+                    <img src="./img/cheasee.png" alt="">
+                </div>
+                <ul>
+                    <li class="texst-bold">Breakfast Tuna</li>
+                    <li class="texst-summ">135 000 sum</li>
+                    <li class="texst-ingredients">Tuna, avocado, hummus, sun dried tomatoes, poached eggs, cream
+                        cheese...</li>
+                </ul>
+                <button class="site-section__menyu-btn" type="button">Add to Basket</button>
             </div>
         </div>
-        <div class="main-container__img">
-
-            <img class="img1" src="./img/breakfast1.png" alt="">
-            <img class="img2 flex" src="./img/Frame 59761.png" alt="">
-
-
-
-        </div>
     </div>
-
-    <!-- COMPONENTS -->
-
+</div>
 
 
-    <div class="site-component__component container ">
-
-        <ul class="site-component__component-items flex">
-            <li class="site-component__component-items active">
-                <a href="#">Breadly</a>
-            </li>
-            <li class="site-component__component-items">
-                <a href="#">Beakery</a>
-            </li>
-            <li class="site-component__component-items">
-                <a href="#">Dessert</a>
-            </li>
-            <li>
-                <a href="#">Breakfast</a>
-            </li>
-            <li class="site-component__component-items">
-                <a href="#">Salats</a>
-            </li>
-
-            <li class="site-component__component-items">
-                <a href="#">Coups</a>
-            </li>
-
-            <li class="site-component__component-items">
-                <a href="#">Sendviches</a>
-            </li>
-            <li class="site-component__component-items">
-                <a href="#">Second meals</a>
-            </li>
-            <li class="site-component__component-items">
-                <a href="#">Garnir</a>
-            </li>
-            <li class="site-component__component-items">
-                <a class="site-component__component-btn">More
-                    <svg width="10" height="5" viewBox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path id="Vector"
-                            d="M8.31689 0.416701L8.31689 0.416696C8.392 0.341583 8.49388 0.299386 8.6001 0.299386C8.70633 0.299386 8.8082 0.341584 8.88331 0.416696C8.95842 0.491808 9.00062 0.593682 9.00062 0.699907C9.00062 0.806131 8.95842 0.908005 8.88331 0.983117L5.28343 4.58299L5.28331 4.58312L5.2126 4.51241C5.18473 4.54037 5.15161 4.56257 5.11515 4.57771C5.07868 4.59285 5.03959 4.60064 5.0001 4.60064C4.96062 4.60064 4.92152 4.59285 4.88506 4.57771C4.84859 4.56257 4.81547 4.54037 4.7876 4.51241L8.31689 0.416701ZM8.31689 0.416701L5.0001 3.73397L8.31689 0.416701ZM1.02995 0.853301C1.05012 0.901896 1.07969 0.946031 1.11695 0.98318L1.68344 0.416819L1.6126 0.487406L1.68332 0.416701L1.68337 0.416753C1.64622 0.379493 1.60209 0.349928 1.5535 0.329751C1.50488 0.309563 1.45275 0.29917 1.4001 0.29917C1.34746 0.29917 1.29533 0.309563 1.24671 0.329751C1.19814 0.349918 1.15403 0.379463 1.11689 0.416696C1.07966 0.453832 1.05011 0.497945 1.02995 0.546513C1.00976 0.595133 0.999365 0.647261 0.999365 0.699907C0.999365 0.752552 1.00976 0.80468 1.02995 0.853301Z"
-                            fill="white" stroke="white" stroke-width="0.2" />
-                    </svg>
-
-                </a>
-            </li>
-        </ul>
-    </div>
 
 
-    <!-- MENYU CARD -->
 
-    <div class="site-section__menyu-card container">
-        <section class="site-section__menyu-card">
-            <div>
-                <h1>Beakery</h1>
 
-                <div class="site-section__menyu-cards">
-                    <div class="site-section__menyu-card-items">
+<footer class="site-footer__box">
 
-                        <div class="site-section__menyu-img">
-                            <img src="./img/sezar.png" alt="">
-                        </div>
-                        <ul>
-                            <li class="texst-bold">Breakfast Tuna</li>
-                            <li class="texst-summ">135 000 sum</li>
-                            <li class="texst-ingredients">Tuna, avocado, hummus, sun dried tomatoes, poached eggs, cream
-                                cheese...</li>
-                        </ul>
-                        <button class="site-section__menyu-btn" type="button">Add to Basket</button>
-                    </div>
-                    <div class="site-section__menyu-card-items">
+    <div class="container">
 
-                        <div class="site-section__menyu-img">
-                            <img src="./img/sezar.png" alt="">
-                        </div>
-                        <ul>
-                            <li class="texst-bold">Breakfast Tuna</li>
-                            <li class="texst-summ">135 000 sum</li>
-                            <li class="texst-ingredients">Tuna, avocado, hummus, sun dried tomatoes, poached eggs, cream
-                                cheese...</li>
-                        </ul>
-                        <button class="site-section__menyu-btn" type="button">Add to Basket</button>
-                    </div>
-                    <div class="site-section__menyu-card-items">
+        <div class="site-footer__information">
+            <div class="site-footer__icon icone">
+                <img src="./img/meinicon.svg" alt="">
+            </div>
 
-                        <div class="site-section__menyu-img">
-                            <img src="./img/sezar.png" alt="">
-                        </div>
-                        <ul>
-                            <li class="texst-bold">Breakfast Tuna</li>
-                            <li class="texst-summ">135 000 sum</li>
-                            <li class="texst-ingredients">Tuna, avocado, hummus, sun dried tomatoes, poached eggs, cream
-                                cheese...</li>
-                        </ul>
-                        <button class="site-section__menyu-btn" type="button">Add to Basket</button>
-                    </div>
-                    <div class="site-section__menyu-card-items">
+            <ul>
+                <li>
+                    <a href="#">About Us</a>
+                </li>
+                <li>
+                    <a href="#">Vacancies</a>
+                </li>
+                <li>
+                    <a href="#">Franchises</a>
+                </li>
+                <li>
+                    <a href="#">Loyalty Program</a>
+                </li>
+            </ul>
+            <div class="line"></div>
+            <div class="site-footer-bottom">
 
-                        <div class="site-section__menyu-img">
-                            <img src="./img/sezar.png" alt="">
-                        </div>
-                        <ul>
-                            <li class="texst-bold">Breakfast Tuna</li>
-                            <li class="texst-summ">135 000 sum</li>
-                            <li class="texst-ingredients">Tuna, avocado, hummus, sun dried tomatoes, poached eggs, cream
-                                cheese...</li>
-                        </ul>
-                        <button class="site-section__menyu-btn" type="button">Add to Basket</button>
-                    </div>
-                    <div class="site-section__menyu-card-items">
+                <div class="site-footer__bottom-text">
+                    <span>©Breadly 2022. All rights reserved</span>
 
-                        <div class="site-section__menyu-img">
-                            <img src="./img/sezar.png" alt="">
-                        </div>
-                        <ul>
-                            <li class="texst-bold">Breakfast Tuna</li>
-                            <li class="texst-summ">135 000 sum</li>
-                            <li class="texst-ingredients">Tuna, avocado, hummus, sun dried tomatoes, poached eggs, cream
-                                cheese...</li>
-                        </ul>
-                        <button class="site-section__menyu-btn" type="button">Add to Basket</button>
-                    </div>
-                    <div class="site-section__menyu-card-items">
-
-                        <div class="site-section__menyu-img">
-                            <img src="./img/sezar.png" alt="">
-                        </div>
-                        <ul>
-                            <li class="texst-bold">Breakfast Tuna</li>
-                            <li class="texst-summ">135 000 sum</li>
-                            <li class="texst-ingredients">Tuna, avocado, hummus, sun dried tomatoes, poached eggs, cream
-                                cheese...</li>
-                        </ul>
-                        <button class="site-section__menyu-btn" type="button">Add to Basket</button>
-                    </div>
-                    <div class="site-section__menyu-card-items">
-
-                        <div class="site-section__menyu-img">
-                            <img src="./img/sezar.png" alt="">
-                        </div>
-                        <ul>
-                            <li class="texst-bold">Breakfast Tuna</li>
-                            <li class="texst-summ">135 000 sum</li>
-                            <li class="texst-ingredients">Tuna, avocado, hummus, sun dried tomatoes, poached eggs, cream
-                                cheese...</li>
-                        </ul>
-                        <button class="site-section__menyu-btn" type="button">Add to Basket</button>
-                    </div>
-                    <div class="site-section__menyu-card-items">
-
-                        <div class="site-section__menyu-img">
-                            <img src="./img/sezar.png" alt="">
-                        </div>
-                        <ul>
-                            <li class="texst-bold">Breakfast Tuna</li>
-                            <li class="texst-summ">135 000 sum</li>
-                            <li class="texst-ingredients">Tuna, avocado, hummus, sun dried tomatoes, poached eggs, cream
-                                cheese...</li>
-                        </ul>
-                        <button class="site-section__menyu-btn" type="button">Add to Basket</button>
-                    </div>
                 </div>
 
 
-        </section>
 
+                <div class="site-footer__social-icons">
+                    <img src="./img/instagram.svg" alt="">
+                    <img src="./img/facebook.svg" alt="">
+                    <img src="./img/tg.svg" alt="">
+                </div>
+            </div>
+        </div>
     </div>
 
-
-
-    </div>
+</footer>
 
 </body>
 <script src="./index.js"></script>
